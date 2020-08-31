@@ -79,5 +79,16 @@ namespace Lab7
         {
 
         }
+
+        private void notifyIcon2_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            textBox2.Text = "Witam";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            notifyIcon2.Icon = SystemIcons.Application;
+            notifyIcon2.ShowBalloonTip(1000, "Errir", "Błąd", ToolTipIcon.Warning);
+        }
     }
 }
